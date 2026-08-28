@@ -15,15 +15,26 @@ Text
     --ps: 4;
     --steps: 2;
 }
+html{
+    scrollbar-width: thin;
+    scrollbar-color: #5FA85A #482b1a;
+}
 p{
-
     font-size: 24px;
     font-family: "Pixelify Sans", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
     margin:-8px auto auto auto;
+}
+h6{
+    text-align: center;
+    font-size: 24px;
+    font-family: "Pixelify Sans", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto auto auto;
 }
 h1{
     font-size: 64px;
@@ -31,7 +42,6 @@ h1{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
     margin:-10px auto auto auto;
 }
 h2{
@@ -40,7 +50,6 @@ h2{
      font-optical-sizing: auto;
      font-weight: 400;
      font-style: normal;
-
      margin:-10px auto auto auto;
 }
 body{
@@ -49,11 +58,31 @@ body{
     min-height: 100dvh;
 }
 
+
 #forest{
     background-color: #B2D959;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    gap: 30px;
+}
+.button{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #5FA85A;
+    color: #0e3a27;
+    text-decoration: none;
+    font-family: "Pixelify Sans", monospace;
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
 }
 
 main{
@@ -79,6 +108,7 @@ main{
 
 #red-panda-holder{
     height: 300px;
+    overflow-x: hidden;
     width: 100%;
     display: flex;
     align-items: center;
@@ -122,8 +152,35 @@ main{
     background-color: #5FA85A;
 }
 
+.contact-me{
+    background-color: #7EC151;
+    width: 80%;
+    margin: auto auto 10px;
+    padding-left: 20px;
+}
+
 #roots{
     background-color: #482b1a;
     width: 100%;
 }
 
+#connections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    gap: 50px;
+}
+#connections .fa{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px !important;
+    width: 50px;
+    height: 50px;
+    color: black;
+    text-decoration: none;
+}
+#connections .fa:hover{
+    opacity: 0.7;
+}
